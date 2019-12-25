@@ -10,7 +10,6 @@ public class MainPage extends Page{
     @FindBy(how = How.XPATH, using = "//p[contains(text(),'Collection Workflows')]")
     public WebElement collectionWorkflowsMenuItem;
 
-
     MainPage(WebDriver webDriver) {
         super(webDriver);
     }

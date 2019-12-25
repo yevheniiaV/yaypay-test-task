@@ -15,7 +15,7 @@ abstract class Page {
   }
 
   void waitAndClick(WebElement element){
-    new WebDriverWait(driver, 20).until(ExpectedConditions.
+    new WebDriverWait(driver, 30).until(ExpectedConditions.
             elementToBeClickable(element)).click();
   }
 }

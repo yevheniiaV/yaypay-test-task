@@ -51,11 +51,11 @@ public class NewWorkFlowResultPage extends CollectionWorkflowsPage{
     }
 
     public boolean isCreatedCallBlockDisplayed(){
-        return createdCallBlock.isDisplayed() && createdCallBlock.getAttribute("data-id") != null;
+        return createdCallBlock.isDisplayed() && !createdCallBlock.getAttribute("data-id").isEmpty();
     }
 
     public boolean isCreatedEmailBlockDisplayed(){
-        return createdEmailBlock.isDisplayed() && createdEmailBlock.getAttribute("data-id") != null;
+        return createdEmailBlock.isDisplayed() && !createdEmailBlock.getAttribute("data-id").isEmpty();
     }
 
 }
